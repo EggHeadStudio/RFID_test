@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RFID Reader Demo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Zebra FX9600 - RFID Reader</h1>
+    
+    <!-- Tagien näyttöalue -->
+    <div class="tag-display" id="tagContainer">
+      Tagien lukutiedot tulevat tähän...
+    </div>
+    
+    <!--
+      Halutessasi käytä tägin kirjoittamiseen, jätetään nyt pois
+      <h2>Kirjoita Tag</h2>
+      ...
+    -->
+
+  </div>
+
+  <!-- Ladataan script.js tiedosto -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
